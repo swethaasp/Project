@@ -1,0 +1,63 @@
+nav {
+    background-color: #343a40; /* Dark background for a sleek look */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items evenly */
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white;
+    text-decoration: none;
+}
+
+/* Add a horizontal underline animation on hover */
+nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
