@@ -1,0 +1,45 @@
+.employee-container {
+
+    display: flex; /* Use Flexbox */
+  
+    flex-direction: row; /* Arrange items horizontally */
+  
+    flex-wrap: wrap; /* Allow items to wrap to the next line if they exceed the container width */
+  
+    justify-content: center; /* Center items horizontally */
+  
+    gap: 20px; /* Space between cards */
+  
+    padding: 20px; /* Add padding around the container */
+  
+   }
+  
+   .employee-card {
+  
+    border: 1px solid #ccc; /* Card border */
+  
+    border-radius: 8px; /* Rounded corners */
+  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+  
+    padding: 15px; /* Inner padding for the card */
+  
+    width: 300px; /* Fixed width for the card */
+  
+    background-color: #fff; /* White background */
+  
+    text-align: left; /* Left-align text */
+  
+   }
+  
+   .employee-photo {
+  
+    width: 100%; /* Make photo full width of card */
+  
+    height: auto; /* Maintain aspect ratio */
+  
+    border-radius: 8px; /* Rounded corners for the photo */
+  
+   }
+  
+    

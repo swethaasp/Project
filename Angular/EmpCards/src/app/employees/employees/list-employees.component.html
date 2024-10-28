@@ -1,0 +1,31 @@
+<div class="employee-container">
+
+    <div class="employee-card" *ngFor="let employee of employees">
+  
+     <img [src]="employee.photoPath" alt="{{employee.name}}'s photo" class="employee-photo">
+  
+     <div class="employee-details">
+  
+      <h3>{{ employee.name }}</h3>
+  
+      <p><strong>ID:</strong> {{ employee.id }}</p>
+  
+      <p><strong>Gender:</strong> {{ employee.gender }}</p>
+  
+      <p><strong>Email:</strong> {{ employee.email || 'N/A' }}</p>
+  
+      <p><strong>Phone:</strong> {{ employee.phoneNumber || 'N/A' }}</p>
+  
+      <p><strong>Department:</strong> {{ employee.department }}</p>
+  
+      <p><strong>Date of Birth:</strong> {{ employee.dateOfBirth | date }}</p>
+  
+      <p><strong>Contact Preference:</strong> {{ employee.contactPreference }}</p>
+  
+      <p><strong>Status:</strong> {{ employee.isActive ? 'Active' : 'Inactive' }}</p>
+  
+     </div>
+  
+    </div>
+  
+  </div>
