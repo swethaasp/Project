@@ -1,0 +1,39 @@
+<div class="update-container">
+    <h2>Update Employee Details</h2>
+    <form class="update-employee-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" [(ngModel)]="employee.name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="position">Position:</label>
+            <input type="text" id="position" [(ngModel)]="employee.position" name="position" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" [(ngModel)]="employee.email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" [(ngModel)]="employee.phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" [(ngModel)]="employee.salary" name="salary" required>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <input type="text" id="department" [(ngModel)]="employee.department" name="department" required>
+        </div>
+
+        <div class="button-group">
+            <button type="submit" class="submit-btn">Update</button>
+            <button type="button" class="cancel-btn" (click)="cancel()">Cancel</button>
+        </div>
+    </form>
+</div>
