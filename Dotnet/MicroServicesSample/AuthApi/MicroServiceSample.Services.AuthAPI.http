@@ -1,0 +1,6 @@
+@MicroServiceSample.Services.AuthAPI_HostAddress = http://localhost:5205
+
+GET {{MicroServiceSample.Services.AuthAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
