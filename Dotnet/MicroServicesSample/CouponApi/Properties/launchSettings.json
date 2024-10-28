@@ -1,0 +1,46 @@
+﻿//how your ASP.NET Core application runs when you're developing it on your computer.
+
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json", //link that helps programs understand this file's format.
+  "iisSettings": {
+    "windowsAuthentication": false, //Not using Windows login; anyone can access it
+    "anonymousAuthentication": true, //Anyone can access the app without needing to log in.
+    "iisExpress": { //IIS Express is a simple web server that helps you run and test your web applications on your own computer without complex setups.
+      "applicationUrl": "http://localhost:28858",
+      "sslPort": 44307 //The port used for secure connections (HTTPS)
+    }
+  },
+  "profiles": { //Different ways to run your app.
+    "http": { //Runs your app using regular HTTP (not secure).
+      "commandName": "Project", //to run the project as a console application
+      "dotnetRunMessages": true, // it shows detailed messages in the console when you run your application
+      "launchBrowser": true, //a web browser will automatically open when you start the application,
+      "launchUrl": "swagger", //it will go directly to the swagger page, which is often used for API documentation.
+
+      "applicationUrl": "http://localhost:5054",
+      "environmentVariables": {
+        //: This sets the environment to "Development," meaning the app will run with settings suited for testing and building, which often includes detailed error messages and debugging features.
+
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7001;http://localhost:5054",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
